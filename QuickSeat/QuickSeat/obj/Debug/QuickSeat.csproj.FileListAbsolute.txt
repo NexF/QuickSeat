@@ -1,0 +1,13 @@
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\bin\Debug\QuickSeat.exe.config
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\bin\Debug\QuickSeat.exe
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\bin\Debug\QuickSeat.pdb
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\obj\Debug\QuickSeat.csprojResolveAssemblyReference.cache
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\obj\Debug\QuickSeat.Properties.Resources.resources
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\obj\Debug\QuickSeat.csproj.GenerateResource.Cache
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\obj\Debug\QuickSeat.csproj.CoreCompileInputs.cache
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\obj\Debug\QuickSeat.exe
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\obj\Debug\QuickSeat.pdb
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\obj\Debug\QuickSeat.FrmMain.resources
+C:\Users\Nex\source\repos\QuickSeat\QuickSeat\obj\Debug\QuickSeat.FrmLogin.resources
