@@ -144,9 +144,7 @@ namespace QuickSeat
             //System.Collections.IEnumerator enu = matches.GetEnumerator();
             if (matches.Count == 0)
             {
-                txtLog.Text += "\r\n 未能找到符合条件的座位，继续尝试中。。。";
-                txtLog.Select(txtLog.TextLength, 0);//光标定位到文本最后\
-                txtLog.ScrollToCaret();//滚动到光标处
+                putline("未能找到符合条件的座位，继续尝试中。。。");
             }
             foreach (Match item in matches)
             {
@@ -175,17 +173,13 @@ namespace QuickSeat
                 res = JObject.Parse(result);    //解析JSON
                 if (res["message"].ToString() == "")
                 {
-                    txtLog.Text += "\r\n 服务器返回：" + res["data"]["receipt"].ToString() + res["data"]["location"].ToString();
-                    txtLog.Select(txtLog.TextLength, 0);//光标定位到文本最后
-                    txtLog.ScrollToCaret();//滚动到光标处
+                    putline("服务器返回：" + res["data"]["receipt"].ToString() + res["data"]["location"].ToString());
                     clkSearching.Enabled = false;
                     button1.Text = "开始随机选座";
                 }
                 else
                 {
-                    txtLog.Text += "\r\n 服务器返回：" + res["message"].ToString();
-                    txtLog.Select(txtLog.TextLength, 0);//光标定位到文本最后
-                    txtLog.ScrollToCaret();//滚动到光标处
+                    putline("服务器返回：" + res["message"].ToString());
                 }
                 break;
             }
@@ -202,9 +196,7 @@ namespace QuickSeat
                 }
                 else
                 {
-                    txtLog.Text += "\r\n 程序将在"+ timeStart.Value.ToString() + "时开始选座，距开始选座还有"+ (timeStart.Value - DateTime.Now).TotalSeconds + "秒";
-                    txtLog.Select(txtLog.TextLength, 0);//光标定位到文本最后
-                    txtLog.ScrollToCaret();//滚动到光标处
+                    putline("程序将在" + timeStart.Value.ToString() + "时开始选座，距开始选座还有" + (timeStart.Value - DateTime.Now).TotalSeconds + "秒");
                 }
             }
             else
@@ -223,6 +215,15 @@ namespace QuickSeat
             {
                 timeStart.Enabled = false;
             }
+        }
+
+
+        //标准输出函数
+        private void putline(string str)
+        {
+            txtLog.Text += "\r\n\r\n[" + DateTime.Now.ToLongTimeString() + "]>" + str;
+            txtLog.Select(txtLog.TextLength, 0);//光标定位到文本最后
+            txtLog.ScrollToCaret();//滚动到光标处
         }
     }
 }
